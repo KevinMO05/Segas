@@ -54,10 +54,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* padding-right: 15px;
+    padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto; */
+    margin-left: auto;
     
 }
 .contenedor {
@@ -71,6 +71,7 @@
       width: 750px;
     }
   }
+
   @media (min-width: 992px) {
     .contenedor {
       width: 970px;
@@ -97,6 +98,7 @@ body {
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--text-color); 
+    padding-bottom: 2rem;
 }
 
 h1, h2,h3{
@@ -150,7 +152,7 @@ img{
     border-radius: 50%;
 }
 
-/* .shape__big{
+.shape__big{
     width: 200px;
     height: 200px;
 }
@@ -158,7 +160,7 @@ img{
 .shape__small{
     width: 50px;
     height: 50px;
-} */
+}
 
 .shape__smaller{
     width: 180px;
@@ -175,10 +177,10 @@ img{
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    /* padding-right: 15px;
+    padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto; */
+    margin-left: auto;
 }
 
 .nav{
@@ -272,7 +274,7 @@ img{
 
 .home{
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
     margin-right: auto;
     margin-left: auto;
 
@@ -563,10 +565,81 @@ img{
 
     width: auto;
 }
+
 .swiper-pagination-bullet{
-    background-color: var(--text-color);
+    background-color: var(--white-color);
 }
 
-.swiper-pagination-bullet-active{
-    background-color: var(--first-color);
+/* -----------FEATURES---------- */
+
+.features{
+    overflow: hidden;
+    position: relative;
+}
+
+.features__container{
+    padding-top: 4rem ;
+    grid-template-columns: 285px;
+    justify-content: center;
+   
+}
+
+.features__group{
+    display: grid;
+    position: relative;
+    z-index: 10;
+}
+
+.features__img{
+    width: 230px;
+    justify-self: center;
+}
+
+
+.features__card{
+    width: 125px;
+    background-color: hsla(0, 0%, 100%, .1);
+    backdrop-filter: blur(16px);
+    border-radius: 1.25rem;
+    padding: .75rem 1.5rem ;
+    text-align: center;
+    color: var(--title-color);
+    position: absolute;
+}
+
+.features__card-1{ 
+    /* 300km */
+    top: -2rem;
+    left: -3rem;
+}
+
+.features__card-2{
+    /* 99 */
+    top: 7rem;
+    left: 16rem;
+}
+
+.features__card-3{
+    /* rever */
+    left: 14rem;
+    top: -2rem;
+}
+
+.features__card-title{
+    font-size: var(--h3-font-size);
+    margin-bottom: .25rem;
+}
+
+.features__description{
+    font-size: var(--smaller-font-size);
+}
+
+.features__map{
+    position: absolute;
+    max-width: initial;
+    width: 400px;
+    top: 5rem;
+    left: 2rem;
+    margin: auto;
+    
 }
