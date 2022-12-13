@@ -54,11 +54,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+<<<<<<< HEAD
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
     
+=======
+>>>>>>> beec1f94cfc29fc38406eec6fba5714663c0e795
 }
 .contenedor {
     padding-right: 15px;
@@ -476,7 +479,7 @@ img{
 
 .popular__card{
     position: relative;
-    width: 238px;
+    width: 250px;
     background-color: var(--container-color);
     padding: 2rem 1.5rem 1.5rem;   
     border-radius: 1rem;
